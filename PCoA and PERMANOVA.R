@@ -1,4 +1,4 @@
-##0. read resampled votu dataset
+#0. read resampled votu dataset
 otu <- read.csv("resampled_votu.csv",row.names = 1,header=T)
 otu <- as.data.frame(t(otu))
 
