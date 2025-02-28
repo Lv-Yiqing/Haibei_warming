@@ -1,5 +1,5 @@
 #0. read resampled votu and motu dataset
-motu <- read.csv("resampled_motu.csv",row.names = 1)
+motu <- read.csv("resampled_host.csv",row.names = 1)
 votu <- read.csv("resampled_votu.csv",row.names = 1)
 
 motu <- as.data.frame(t(motu))
