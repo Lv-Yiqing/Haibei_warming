@@ -10,12 +10,12 @@ ANdis <- vegdist(scale(env$AN.mg.kg.1),method="euclidean")
 MBCdis <- vegdist(scale(env$MBC.mg.kg.1),method="euclidean")
 MATdis <- vegdist(scale(env$MAT..),method="euclidean")
 
-#2. read host community data (resample_motu) and calculate distance matrix
-host <- read.csv("resampled_motu.csv",header = T, row.names = 1)
+#2. read host community data and calculate distance matrix
+host <- read.csv("resampled_host.csv",header = T, row.names = 1)
 host <- as.data.frame(t(host))
 hostdis <- vegdist(host,method="bray")
 
-#3. read viral community data (resample_votu) and calculate distance matrix
+#3. read viral community data and calculate distance matrix
 votu <- read.csv("resampled_votu.csv",header = T,row.names = 1)
 votu <- as.data.frame(t(votu))
 votudis <- vegdist(votu,method="bray")
