@@ -63,7 +63,7 @@ python dvf.py \
 ### Screening viral contigs that meet the criteria
 ```
 cd S1.dvf
-awk -F'\t' '($3>=0.9)&&($4<=0.01){print $1}' S1_assembled_contigs.fa_gt5000bp_dvfpred.txt > S1.dvf_good_id.txt
+awk -F'\t' '($3>=0.9)&&($4<=0.01){print $1}' S1.contigs.fa_gt5000bp_dvfpred.txt > S1.dvf_good_id.txt
 seqkit grep -n --pattern-file S1.dvf_good_id.txt S1.contigs.fa -o S1.dvf_good.fa
 ```
 
