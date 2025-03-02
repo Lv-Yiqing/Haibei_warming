@@ -132,7 +132,8 @@ checkv end_to_end vOTU.fa checkv -d db/checkv-db-v1.5 -t 50
 
 # 5 Abundance calculation
 ### Calculate the relative abundance of metagenome-derived vOTUs and virome-derived vOTUs separately.(We only show metagenome-derived vOTU as an example)
-```coverm contig \
+```
+coverm contig \
 --reference metagenome_derived_vOTU.fa \
 --interleaved path/to/genomic_hq_reads.fastq \
 --mapper bwa-mem \
